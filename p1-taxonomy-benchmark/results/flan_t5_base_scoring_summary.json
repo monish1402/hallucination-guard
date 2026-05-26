@@ -1,0 +1,28 @@
+{
+  "model": "google/flan-t5-base",
+  "dataset": "TruthfulQA",
+  "total_questions": 817,
+  "string_match": {
+    "exact": 11,
+    "partial": 112,
+    "none": 694,
+    "hallucination_rate": 84.9
+  },
+  "bertscore": {
+    "correct": 3,
+    "hallucinated": 814,
+    "threshold": 0.85,
+    "mean_f1": 0.3871,
+    "hallucination_rate": 99.6
+  },
+  "nli": {
+    "correct": 331,
+    "hallucinated": 486,
+    "hallucination_rate": 59.5
+  },
+  "consensus": {
+    "correct": 68,
+    "hallucinated": 749,
+    "hallucination_rate": 91.7
+  }
+}
