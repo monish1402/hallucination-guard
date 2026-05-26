@@ -1,0 +1,206 @@
+{
+  "dataset": "TruthfulQA",
+  "config": "generation",
+  "total_questions": 817,
+  "unique_categories": 38,
+  "categories": [
+    {
+      "category": "Misconceptions",
+      "count": 100,
+      "percentage": 12.24
+    },
+    {
+      "category": "Law",
+      "count": 64,
+      "percentage": 7.83
+    },
+    {
+      "category": "Health",
+      "count": 55,
+      "percentage": 6.73
+    },
+    {
+      "category": "Sociology",
+      "count": 55,
+      "percentage": 6.73
+    },
+    {
+      "category": "Economics",
+      "count": 31,
+      "percentage": 3.79
+    },
+    {
+      "category": "Fiction",
+      "count": 30,
+      "percentage": 3.67
+    },
+    {
+      "category": "Paranormal",
+      "count": 26,
+      "percentage": 3.18
+    },
+    {
+      "category": "Conspiracies",
+      "count": 25,
+      "percentage": 3.06
+    },
+    {
+      "category": "Stereotypes",
+      "count": 24,
+      "percentage": 2.94
+    },
+    {
+      "category": "History",
+      "count": 24,
+      "percentage": 2.94
+    },
+    {
+      "category": "Confusion: People",
+      "count": 23,
+      "percentage": 2.82
+    },
+    {
+      "category": "Superstitions",
+      "count": 22,
+      "percentage": 2.69
+    },
+    {
+      "category": "Indexical Error: Other",
+      "count": 21,
+      "percentage": 2.57
+    },
+    {
+      "category": "Myths and Fairytales",
+      "count": 21,
+      "percentage": 2.57
+    },
+    {
+      "category": "Language",
+      "count": 21,
+      "percentage": 2.57
+    },
+    {
+      "category": "Psychology",
+      "count": 19,
+      "percentage": 2.33
+    },
+    {
+      "category": "Proverbs",
+      "count": 18,
+      "percentage": 2.2
+    },
+    {
+      "category": "Weather",
+      "count": 17,
+      "percentage": 2.08
+    },
+    {
+      "category": "Misquotations",
+      "count": 16,
+      "percentage": 1.96
+    },
+    {
+      "category": "Nutrition",
+      "count": 16,
+      "percentage": 1.96
+    },
+    {
+      "category": "Indexical Error: Time",
+      "count": 16,
+      "percentage": 1.96
+    },
+    {
+      "category": "Religion",
+      "count": 15,
+      "percentage": 1.84
+    },
+    {
+      "category": "Confusion: Places",
+      "count": 15,
+      "percentage": 1.84
+    },
+    {
+      "category": "Logical Falsehood",
+      "count": 14,
+      "percentage": 1.71
+    },
+    {
+      "category": "Distraction",
+      "count": 14,
+      "percentage": 1.71
+    },
+    {
+      "category": "Advertising",
+      "count": 13,
+      "percentage": 1.59
+    },
+    {
+      "category": "Misinformation",
+      "count": 12,
+      "percentage": 1.47
+    },
+    {
+      "category": "Indexical Error: Location",
+      "count": 11,
+      "percentage": 1.35
+    },
+    {
+      "category": "Politics",
+      "count": 10,
+      "percentage": 1.22
+    },
+    {
+      "category": "Education",
+      "count": 10,
+      "percentage": 1.22
+    },
+    {
+      "category": "Finance",
+      "count": 9,
+      "percentage": 1.1
+    },
+    {
+      "category": "Subjective",
+      "count": 9,
+      "percentage": 1.1
+    },
+    {
+      "category": "Indexical Error: Identity",
+      "count": 9,
+      "percentage": 1.1
+    },
+    {
+      "category": "Science",
+      "count": 9,
+      "percentage": 1.1
+    },
+    {
+      "category": "Confusion: Other",
+      "count": 8,
+      "percentage": 0.98
+    },
+    {
+      "category": "Mandela Effect",
+      "count": 6,
+      "percentage": 0.73
+    },
+    {
+      "category": "Statistics",
+      "count": 5,
+      "percentage": 0.61
+    },
+    {
+      "category": "Misconceptions: Topical",
+      "count": 4,
+      "percentage": 0.49
+    }
+  ],
+  "answer_length_stats": {
+    "mean": 9.22,
+    "min": 1,
+    "max": 24,
+    "std": 4.08
+  },
+  "avg_correct_answers_per_question": 3.18,
+  "avg_incorrect_answers_per_question": 4.06
+}
