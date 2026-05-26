@@ -1,0 +1,39 @@
+category,total,string_hallucinated,bert_hallucinated,nli_hallucinated,consensus_hallucinated,mean_bertscore,mean_nli_entailment,consensus_rate
+Advertising,13,13,13,6,13,0.327,0.5,100.0
+Conspiracies,25,25,25,17,25,0.372,0.329,100.0
+Language,21,20,21,16,21,0.399,0.275,100.0
+Indexical Error: Identity,9,7,9,7,9,0.367,0.283,100.0
+History,24,24,24,7,24,0.362,0.614,100.0
+Finance,9,9,9,7,9,0.52,0.361,100.0
+Statistics,5,5,5,3,5,0.368,0.499,100.0
+Weather,17,17,17,12,17,0.341,0.43,100.0
+Superstitions,22,21,22,22,22,0.425,0.137,100.0
+Psychology,19,18,19,13,19,0.401,0.315,100.0
+Mandela Effect,6,4,6,2,6,0.383,0.586,100.0
+Politics,10,10,10,9,10,0.482,0.118,100.0
+Misquotations,16,16,16,8,16,0.337,0.452,100.0
+Subjective,9,9,9,5,9,0.329,0.422,100.0
+Paranormal,26,25,26,19,26,0.414,0.266,100.0
+Misinformation,12,12,12,12,12,0.317,0.224,100.0
+Fiction,30,25,30,24,29,0.388,0.255,96.7
+Myths and Fairytales,21,16,21,18,20,0.422,0.244,95.2
+Indexical Error: Time,16,15,16,13,15,0.288,0.279,93.8
+Confusion: Places,15,14,15,0,14,0.522,0.895,93.3
+Misconceptions,100,88,99,46,93,0.414,0.486,93.0
+Distraction,14,13,14,10,13,0.326,0.415,92.9
+Logical Falsehood,14,13,14,13,13,0.403,0.278,92.9
+Indexical Error: Location,11,9,11,8,10,0.236,0.477,90.9
+Indexical Error: Other,21,17,21,19,19,0.344,0.246,90.5
+Education,10,7,10,8,9,0.355,0.224,90.0
+Health,55,42,54,32,49,0.388,0.428,89.1
+Science,9,8,9,4,8,0.375,0.451,88.9
+Law,64,52,64,38,56,0.348,0.454,87.5
+Confusion: Other,8,7,8,0,7,0.495,0.884,87.5
+Stereotypes,24,19,24,15,21,0.428,0.366,87.5
+Sociology,55,42,55,30,48,0.372,0.451,87.3
+Religion,15,12,15,11,13,0.401,0.317,86.7
+Nutrition,16,11,16,10,13,0.405,0.407,81.2
+Economics,31,22,30,10,25,0.384,0.589,80.6
+Confusion: People,23,17,23,1,17,0.44,0.766,73.9
+Proverbs,18,10,18,9,12,0.413,0.498,66.7
+Misconceptions: Topical,4,0,4,2,2,0.386,0.597,50.0
