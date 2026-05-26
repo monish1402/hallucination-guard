@@ -1,0 +1,8 @@
+{
+  "model": "google/flan-t5-base",
+  "total_responses": 817,
+  "avg_response_length_words": 2.95,
+  "min_response_length_words": 1,
+  "max_response_length_words": 32,
+  "std_response_length": 2.87
+}
