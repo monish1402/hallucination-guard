@@ -1,18 +1,18 @@
 # Fdb version 4
-["bibtex main"] 1779871624.75994 "main.aux" "main.bbl" "main" 1779871633.55943 0
+["bibtex main"] 1779873421.32741 "main.aux" "main.bbl" "main" 1779873424.68759 0
   "./references.bib" 1779803249 3920 7da65d1ab7ca34c7a03bfbeb3aa2ab6d ""
   "C:/Users/ironm/AppData/Local/Programs/MiKTeX/bibtex/bst/ieeetran/IEEEtran.bst" 1440622569 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "main.aux" 1779871631 6516 2b4f62e998f6dc03f7c08c3daeb5e67a "pdflatex"
+  "main.aux" 1779873423 6609 d6e23ed421c497ae0380a22b2b7fe8da "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1779871626.14669 "c:/Users/ironm/hallucination-guard/papers/p1-taxonomy-benchmark/main.tex" "main.pdf" "main" 1779871633.56157 0
+["pdflatex"] 1779873421.62905 "c:/Users/ironm/hallucination-guard/papers/p1-taxonomy-benchmark/main.tex" "main.pdf" "main" 1779873424.68872 0
   "C:/Users/ironm/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1779804490 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/ironm/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1779804330 13333487 b5f1063c33156f25044ab50e05e6bee0 ""
   "C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
-  "C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136765053 960 379cc0019370a9e0208a0a3f949f847a ""
-  "C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/courier/pcrr8r.tfm" 1136765053 1292 bd42be2f344128bff6d35d98474adfe3 ""
+  "C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/courier/pcrb7t.tfm" 1136765053 960 4ab65358b8406f30ef5496c8c096d22b ""
+  "C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/courier/pcrb8r.tfm" 1136765053 1292 3059476c50a24578715759f22652f3d0 ""
   "C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/times/ptmb7t.tfm" 1136752454 2172 fd0c924230362ff848a33632ed45dc23 ""
   "C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/times/ptmb8r.tfm" 1136752454 4524 6bce29db5bc272ba5f332261583fee9c ""
   "C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/times/ptmbi7t.tfm" 1136752454 2228 e564491c42a4540b5ebb710a75ff306c ""
@@ -43,12 +43,12 @@
   "C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1247596666 32716 08e384dc442464e7285e891af9f45947 ""
   "C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1247596667 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
-  "C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb" 1136846148 45758 19968a0990191524e34e1994d4a31cb6 ""
+  "C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb" 1136846148 50493 4ed1f7e9eba8f1f3e1ec25195460190d ""
   "C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb" 1136833548 44729 fea0975e20ec51c992338362f05f1146 ""
   "C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb" 1136833548 44656 0cbca70e0534538582128f6b54593cca ""
   "C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb" 1136833548 46026 687528a208fbfc1f00832bb96cccebbb ""
   "C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb" 1136833548 45458 504e2b06fa82109d168c7a0afb09e145 ""
-  "C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/vf/adobe/courier/pcrr7t.vf" 1136765053 1344 6ff472164bf9de0fb2e864b28ac156d9 ""
+  "C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/vf/adobe/courier/pcrb7t.vf" 1136765053 1344 c590fc3b8640445e169e64e330afb3d5 ""
   "C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/vf/adobe/times/ptmb7t.vf" 1136752454 1372 788387fea833ef5963f4c5bffe33eb89 ""
   "C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/vf/adobe/times/ptmbi7t.vf" 1136752454 1384 6ac0f8b839230f5d9389287365b243c0 ""
   "C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/vf/adobe/times/ptmr7t.vf" 1136752454 1380 0ea3a3370054be6da6acd929ec569f06 ""
@@ -113,14 +113,14 @@
   "C:/Users/ironm/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/ironm/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "IEEEtran.cls" 1779802982 288304 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "c:/Users/ironm/hallucination-guard/papers/p1-taxonomy-benchmark/main.tex" 1779871613 21061 a0593fb09ee811dcc713f17f201f0172 ""
+  "c:/Users/ironm/hallucination-guard/papers/p1-taxonomy-benchmark/main.tex" 1779873417 23741 9c7ba5396a9e0ad64fde8b2b84d45a3d ""
   "figures/fig02_hallucination_rate_by_category.png" 1779797654 550111 3107307600c77fc659d0a4df1954505c ""
   "figures/fig03_metric_comparison.png" 1779797659 190126 4f5c1adee16e822d5e9dcfa7bfa63293 ""
   "figures/fig04_bertscore_distribution.png" 1779797659 129449 a4b328f72258f1185d6c070155307492 ""
-  "main.aux" 1779871631 6516 2b4f62e998f6dc03f7c08c3daeb5e67a "pdflatex"
-  "main.bbl" 1779871625 3662 7fbafe5b1fc23dec7ce24e6a43f8fa15 "bibtex main"
-  "main.out" 1779871631 3881 faddc16421cf2dce81f666b7985026b3 "pdflatex"
-  "main.tex" 1779871613 21061 a0593fb09ee811dcc713f17f201f0172 ""
+  "main.aux" 1779873423 6609 d6e23ed421c497ae0380a22b2b7fe8da "pdflatex"
+  "main.bbl" 1779873421 3662 08232a428c84ac3ec0b27b331b539b8f "bibtex main"
+  "main.out" 1779873423 4150 ad0161ab97cd42b27a39fd16b8c9a712 "pdflatex"
+  "main.tex" 1779873417 23741 9c7ba5396a9e0ad64fde8b2b84d45a3d ""
   (generated)
   "main.aux"
   "main.log"

@@ -2,19 +2,14 @@
 \providecommand\hyper@newdestlabel[2]{}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
-\citation{huang2023survey}
 \citation{ji2023survey}
+\citation{huang2023survey}
 \citation{guardrails2024}
-\citation{varshney2023stitch}
-\citation{manakul2023selfcheck}
-\citation{min2023factscore}
+\citation{lin2022truthfulqa}
 \citation{ji2023survey}
 \citation{huang2023survey}
 \@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{section.1}\protected@file@percent }
 \newlabel{sec:introduction}{{I}{1}{Introduction}{section.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {II}Related Work}{1}{section.2}\protected@file@percent }
-\newlabel{sec:related}{{II}{1}{Related Work}{section.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-A}}Hallucination in Language Models}{1}{subsection.2.1}\protected@file@percent }
 \citation{lin2022truthfulqa}
 \citation{manakul2023selfcheck}
 \citation{min2023factscore}
@@ -22,14 +17,17 @@
 \citation{lin2022truthfulqa}
 \citation{chung2022scaling}
 \citation{zhang2020bertscore}
+\@writefile{toc}{\contentsline {section}{\numberline {II}Related Work}{2}{section.2}\protected@file@percent }
+\newlabel{sec:related}{{II}{2}{Related Work}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-A}}Hallucination in Language Models}{2}{subsection.2.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-B}}Hallucination Detection Methods}{2}{subsection.2.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-C}}Gaps Addressed by This Work}{2}{subsection.2.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {III}Methodology}{2}{section.3}\protected@file@percent }
 \newlabel{sec:methodology}{{III}{2}{Methodology}{section.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Dataset}{2}{subsection.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}Model}{2}{subsection.3.2}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces TruthfulQA Dataset Statistics}}{2}{table.1}\protected@file@percent }
 \newlabel{tab:dataset_stats}{{I}{2}{TruthfulQA Dataset Statistics}{table.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}Model}{2}{subsection.3.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-C}}Detection Methods}{2}{subsection.3.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {III-C}1}String Matching (Baseline)}{2}{subsubsection.3.3.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {III-C}2}BERTScore}{2}{subsubsection.3.3.2}\protected@file@percent }
@@ -47,28 +45,29 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-D}}Domain-Stratified Hallucination Taxonomy}{3}{subsection.4.4}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces BERTScore F1 distribution showing the majority of responses clustering below the correctness threshold of 0.85, with a mean of 0.387.}}{3}{figure.2}\protected@file@percent }
 \newlabel{fig:bertscore_dist}{{2}{3}{BERTScore F1 distribution showing the majority of responses clustering below the correctness threshold of 0.85, with a mean of 0.387}{figure.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Consensus hallucination rate across all 38 TruthfulQA categories. 16 categories exhibit 100\% hallucination. High-stakes domains Health and Law reach 89.1\% and 87.5\% respectively.}}{3}{figure.3}\protected@file@percent }
-\newlabel{fig:category_rates}{{3}{3}{Consensus hallucination rate across all 38 TruthfulQA categories. 16 categories exhibit 100\% hallucination. High-stakes domains Health and Law reach 89.1\% and 87.5\% respectively}{figure.3}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {V}Discussion}{3}{section.5}\protected@file@percent }
 \newlabel{sec:discussion}{{V}{3}{Discussion}{section.5}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-A}}Metric Disagreement as a Research Signal}{3}{subsection.5.1}\protected@file@percent }
 \citation{huang2023survey}
 \citation{lin2022truthfulqa}
-\bibstyle{IEEEtran}
-\bibdata{references}
-\bibcite{huang2023survey}{1}
-\bibcite{ji2023survey}{2}
-\bibcite{guardrails2024}{3}
-\bibcite{varshney2023stitch}{4}
-\bibcite{manakul2023selfcheck}{5}
-\bibcite{min2023factscore}{6}
-\bibcite{lin2022truthfulqa}{7}
-\bibcite{chung2022scaling}{8}
-\bibcite{zhang2020bertscore}{9}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Consensus hallucination rate across all 38 TruthfulQA categories. 16 categories exhibit 100\% hallucination. High-stakes domains Health and Law reach 89.1\% and 87.5\% respectively.}}{4}{figure.3}\protected@file@percent }
+\newlabel{fig:category_rates}{{3}{4}{Consensus hallucination rate across all 38 TruthfulQA categories. 16 categories exhibit 100\% hallucination. High-stakes domains Health and Law reach 89.1\% and 87.5\% respectively}{figure.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-B}}Domain Risk Hierarchy}{4}{subsection.5.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-C}}Implications for Model Scale}{4}{subsection.5.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-D}}Limitations}{4}{subsection.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-E}}A Note on What These Numbers Feel Like}{4}{subsection.5.5}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {VI}Conclusion}{4}{section.6}\protected@file@percent }
 \newlabel{sec:conclusion}{{VI}{4}{Conclusion}{section.6}{}}
-\@writefile{toc}{\contentsline {section}{References}{4}{section*.2}\protected@file@percent }
-\gdef \@abspage@last{4}
+\bibstyle{IEEEtran}
+\bibdata{references}
+\bibcite{ji2023survey}{1}
+\bibcite{huang2023survey}{2}
+\bibcite{guardrails2024}{3}
+\bibcite{lin2022truthfulqa}{4}
+\bibcite{manakul2023selfcheck}{5}
+\bibcite{min2023factscore}{6}
+\bibcite{varshney2023stitch}{7}
+\bibcite{chung2022scaling}{8}
+\bibcite{zhang2020bertscore}{9}
+\@writefile{toc}{\contentsline {section}{References}{5}{section*.2}\protected@file@percent }
+\gdef \@abspage@last{5}

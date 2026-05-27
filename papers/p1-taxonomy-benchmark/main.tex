@@ -3,7 +3,7 @@
 %% A Taxonomy and Multi-Metric Benchmark of Hallucination
 %% in Instruction-Tuned Large Language Models
 %%
-%% Author: Monishwaran K
+%% Author: [Monishwaran K]
 %% Institution: Sathyabama Institute of Science and Technology
 %% ============================================================
 
@@ -71,8 +71,9 @@ Misquotations.
 High-stakes domains such as Health (89.1\%) and Law (87.5\%)
 demonstrate consistently elevated hallucination rates.
 We release our annotated dataset, scoring pipeline, and
-experimental code as an open-source benchmark to support
-reproducible hallucination research.
+experimental code publicly at
+\texttt{github.com/monish1402/hallucination-guard}
+to support reproducible hallucination research.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -85,68 +86,81 @@ factuality evaluation
 \section{Introduction}
 \label{sec:introduction}
 
-The widespread deployment of large language models (LLMs) in
-production systems has brought renewed urgency to the problem
-of \textit{hallucination} — a phenomenon in which generative
-models produce fluent, confident, and contextually plausible
-responses that are nonetheless factually incorrect
+Anyone who has used a large language model for more than a
+few minutes has likely encountered hallucination — the
+frustrating tendency of these systems to state incorrect
+information with complete confidence.
+Ask a language model about a historical date, a legal
+precedent, or a medical fact, and there is a meaningful
+probability that the answer will sound authoritative while
+being entirely wrong \cite{ji2023survey}.
+This phenomenon, broadly defined as the generation of
+plausible yet factually incorrect content, has moved from
+an academic curiosity to a practical obstacle as LLMs are
+deployed in increasingly sensitive real-world applications
 \cite{huang2023survey}.
-Hallucination poses particular risks in safety-critical
-applications: a medical assistant that fabricates drug
-interactions, a legal research tool that invents case citations,
-or a financial advisor that generates false market statistics
-can cause direct, measurable harm to end users
-\cite{ji2023survey}.
 
-Industry estimates suggest that hallucination-related incidents
-cost enterprise AI deployments in excess of \$250 million
-annually \cite{guardrails2024}.
-Despite this, the research community lacks a systematic,
-domain-stratified characterisation of hallucination behaviour
-for smaller instruction-tuned models that are commonly deployed
-in resource-constrained production environments.
+The consequences are not abstract.
+Industry estimates suggest that hallucination-related
+incidents cost enterprise AI deployments in excess of
+\$250 million annually \cite{guardrails2024}.
+A medical assistant that fabricates drug interactions, a
+legal research tool that invents case citations, or a
+financial advisor that generates false market statistics
+can cause measurable, direct harm to the people who
+rely on them.
+Despite this, the research community's understanding of
+\textit{which} knowledge domains are most vulnerable to
+hallucination, and \textit{which} measurement methods
+most reliably detect it, remains incomplete — particularly
+for the compact, instruction-tuned models that are most
+commonly deployed in resource-constrained production
+environments.
 
-Prior work has addressed hallucination detection through a
-variety of methods including external knowledge retrieval
-\cite{varshney2023stitch}, consistency-based sampling
-\cite{manakul2023selfcheck}, and fine-grained atomic evaluation
-\cite{min2023factscore}.
-However, these studies predominantly evaluate large proprietary
-models (GPT-3, GPT-4, ChatGPT) and do not systematically
-characterise which knowledge domains are most susceptible to
-hallucination, nor do they compare multiple detection metrics
-on the same experimental corpus.
+This paper addresses that gap directly.
+We evaluate \textit{google/flan-t5-base} on TruthfulQA
+\cite{lin2022truthfulqa}, a benchmark of 817 questions
+specifically designed to probe factual reliability across
+38 knowledge categories.
+Rather than relying on a single detection metric — a
+common limitation of prior work — we apply three
+complementary methods and introduce a consensus-based
+labelling scheme to handle the substantial inter-metric
+disagreement we observe.
+Our findings are striking: a consensus hallucination rate
+of 91.7\%, with 16 of 38 categories showing complete
+failure, including high-stakes domains such as Health,
+Law, and Finance.
 
-This paper addresses these gaps through four contributions:
+This paper makes four contributions:
 
 \begin{enumerate}
-\item We present a \textbf{domain-stratified hallucination
-  taxonomy} across 38 knowledge categories using TruthfulQA,
-  identifying 16 categories with 100\% hallucination rates.
+\item A \textbf{domain-stratified hallucination taxonomy}
+  identifying which knowledge categories are most
+  vulnerable to hallucination in compact LLMs.
 
-\item We conduct a \textbf{systematic comparison of three
-  detection metrics} — string matching, BERTScore, and NLI
-  entailment scoring — on an identical experimental corpus,
-  revealing substantial inter-metric disagreement in 47.4\%
-  of cases.
+\item A \textbf{systematic comparison of three detection
+  metrics} — string matching, BERTScore, and NLI
+  entailment — revealing 47.4\% inter-metric disagreement
+  on an identical corpus.
 
-\item We propose a \textbf{consensus-based labelling scheme}
-  that resolves inter-metric disagreement and provides more
-  reliable hallucination labels than any single metric alone.
+\item A \textbf{consensus-based labelling scheme} that
+  provides more reliable hallucination labels than any
+  single metric alone.
 
-\item We release an \textbf{open-source benchmark pipeline}
-  and annotated dataset to enable reproducible hallucination
-  research on instruction-tuned models.
+\item An \textbf{open-source benchmark pipeline} and
+  annotated dataset released to support reproducible
+  research in this area.
 \end{enumerate}
 
-The remainder of this paper is structured as follows.
+The remainder of this paper is organised as follows.
 Section~\ref{sec:related} reviews related work.
-Section~\ref{sec:methodology} describes our experimental
+Section~\ref{sec:methodology} describes the experimental
 methodology.
 Section~\ref{sec:results} presents quantitative results.
-Section~\ref{sec:discussion} analyses key findings.
-Section~\ref{sec:conclusion} concludes and outlines future work.
-
+Section~\ref{sec:discussion} analyses the key findings.
+Section~\ref{sec:conclusion} concludes and outlines
+future work.
 %% ============================================================
 \section{Related Work}
 \label{sec:related}
@@ -408,7 +422,19 @@ We identify four tiers of hallucination risk:
   hallucination rates.
 \end{itemize}
 
-\begin{figure}[h]
+It is worth noting that even the lowest hallucination rate
+observed in this study — 50.0\% for Misconceptions: Topical
+— would be considered unacceptably high in any real-world
+deployment context.
+A system that produces incorrect responses half the time
+on factual questions cannot be trusted without a robust
+detection and correction layer.
+This observation reinforces the central motivation of this
+research series: hallucination is not an edge case to be
+occasionally handled, but a pervasive failure mode that
+demands systematic measurement and mitigation.
+
+\begin{figure}[htbp]
 \centering
 \includegraphics[width=\columnwidth]
   {fig02_hallucination_rate_by_category.png}
@@ -498,35 +524,78 @@ Future work will extend this benchmark to include
 Mistral-7B, LLaMA-3-8B, and domain-specific datasets
 in medical and legal question answering.
 
+\subsection{A Note on What These Numbers Feel Like}
+
+Numbers like 91.7\% can become abstract quickly.
+To ground this result: out of every 100 questions asked
+to this model, roughly 92 responses contained factually
+incorrect information.
+In the History category — questions about documented,
+verifiable past events — the model answered correctly
+zero times out of 24 attempts.
+In the Finance category, it answered correctly zero times
+out of 9 attempts.
+
+We raise this not to condemn the model, which was not
+designed or sized for this task, but to illustrate why
+hallucination detection and mitigation are not optional
+features in production AI systems — they are fundamental
+safety requirements.
+The goal of this research series is to contribute
+practical, computationally efficient tools toward that
+requirement.
 %% ============================================================
 \section{Conclusion}
 \label{sec:conclusion}
 
-This paper presented a systematic taxonomy and multi-metric
-benchmark of hallucination in \textit{google/flan-t5-base}
-evaluated on TruthfulQA.
-Our key findings are: (1) a consensus hallucination rate
-of 91.7\% demonstrating that compact instruction-tuned
-models remain highly unreliable on factual question
-answering; (2) 16 of 38 knowledge categories exhibit
-100\% hallucination rates, including high-stakes domains
-of Health and Law; and (3) inter-metric disagreement
-in 47.4\% of cases motivates consensus-based evaluation
-as a more reliable measurement standard than any single
-metric.
+This paper set out to answer a straightforward question:
+how reliably does a compact instruction-tuned language
+model answer factual questions, and how consistently can
+we measure that reliability?
+The answer to both parts is sobering.
 
-We release the complete experimental pipeline, annotated
-dataset, and figures as open-source contributions at:
-\texttt{https://github.com/monish1402/hallucination-guard}
+On TruthfulQA, \textit{google/flan-t5-base} achieves a
+consensus hallucination rate of 91.7\% across 817
+questions, with 16 of 38 knowledge categories exhibiting
+complete hallucination and no correct responses generated
+at all.
+High-stakes domains including Health and Law demonstrate
+hallucination rates of 89.1\% and 87.5\% respectively —
+rates that make unmitigated deployment in clinical or
+legal contexts inadvisable.
 
-Future work will extend this benchmark to larger open-source
-models, introduce cross-lingual evaluation, and integrate
-the scoring pipeline with the detection and mitigation
-frameworks presented in subsequent papers of this series.
+On the measurement side, we find that three commonly used
+detection metrics disagree on 47.4\% of cases, with
+reported hallucination rates ranging from 59.5\% to
+99.6\% on the same corpus.
+This finding has a direct implication for how the
+research community reports and compares results:
+metric choice matters enormously, and single-metric
+evaluation is insufficient.
+
+The consensus labelling scheme introduced here is a
+small but practical step toward more reproducible
+hallucination measurement.
+The annotated dataset and pipeline we release alongside
+this paper are intended to lower the barrier for
+researchers who want to extend this work.
+
+In the subsequent papers of this series, we build
+directly on these findings.
+Paper 2 extends the detection framework to a
+cross-model consistency-based approach that operates
+without external knowledge.
+Paper 3 introduces a conditional RAG-based mitigation
+system that uses hallucination risk scores to trigger
+targeted retrieval, reducing hallucination rates in
+domain-specific question answering.
+
+The path from measuring a problem to solving it is long.
+This paper takes the first step.
 
 %% ============================================================
 \section*{Acknowledgment}
-Thank to the Department of Computer Science and
+The authors thank the Department of Computer Science and
 Engineering at Sathyabama Institute of Science and Technology
 for computational and institutional support.
 
