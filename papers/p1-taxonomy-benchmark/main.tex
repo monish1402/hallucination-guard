@@ -463,10 +463,26 @@ framework.
 
 \subsection{Implications for Model Scale}
 
-[YOUR TEXT HERE: Write 3-4 sentences discussing what
-you think the results would look like for a larger model
-like Mistral 7B or LLaMA 3. Would you expect lower
-hallucination rates? Why? This is your analysis.]
+The results presented in this study reflect the behaviour of
+a compact 250M parameter model, and it is reasonable to ask
+whether larger models would exhibit meaningfully lower
+hallucination rates on the same benchmark.
+Based on the scaling literature \cite{huang2023survey} and
+the findings of Lin et al.~\cite{lin2022truthfulqa}, larger
+models do demonstrate improved truthfulness — however, they
+do not eliminate hallucination.
+Rather, the nature of the failure changes: larger models
+tend to hallucinate less frequently, but when they do, their
+responses are more linguistically fluent and therefore
+more difficult to detect.
+A 7B parameter model producing a confident, well-structured
+incorrect answer is arguably more dangerous in a high-stakes
+deployment than a 250M parameter model producing a short,
+obviously incomplete one.
+This distinction motivates our subsequent work on
+detection and mitigation, where we specifically target
+the harder problem of hallucination in larger, more
+capable models.
 
 \subsection{Limitations}
 

@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1779804496.68091 "main.aux" "main.bbl" "main" 1779807009.10285 0
+["bibtex main"] 1779871624.75994 "main.aux" "main.bbl" "main" 1779871633.55943 0
   "./references.bib" 1779803249 3920 7da65d1ab7ca34c7a03bfbeb3aa2ab6d ""
   "C:/Users/ironm/AppData/Local/Programs/MiKTeX/bibtex/bst/ieeetran/IEEEtran.bst" 1440622569 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "main.aux" 1779807006 6460 5950bd9500c7fbea69263a203a9171c4 "pdflatex"
+  "main.aux" 1779871631 6516 2b4f62e998f6dc03f7c08c3daeb5e67a "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1779807001.59564 "c:/Users/ironm/hallucination-guard/papers/p1-taxonomy-benchmark/main.tex" "main.pdf" "main" 1779807009.10443 0
+["pdflatex"] 1779871626.14669 "c:/Users/ironm/hallucination-guard/papers/p1-taxonomy-benchmark/main.tex" "main.pdf" "main" 1779871633.56157 0
   "C:/Users/ironm/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1779804490 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/ironm/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1779804330 13333487 b5f1063c33156f25044ab50e05e6bee0 ""
   "C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -113,14 +113,14 @@
   "C:/Users/ironm/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/ironm/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "IEEEtran.cls" 1779802982 288304 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "c:/Users/ironm/hallucination-guard/papers/p1-taxonomy-benchmark/main.tex" 1779807001 20247 d2b356ecf0f28e88468df60af9de0f78 ""
+  "c:/Users/ironm/hallucination-guard/papers/p1-taxonomy-benchmark/main.tex" 1779871613 21061 a0593fb09ee811dcc713f17f201f0172 ""
   "figures/fig02_hallucination_rate_by_category.png" 1779797654 550111 3107307600c77fc659d0a4df1954505c ""
   "figures/fig03_metric_comparison.png" 1779797659 190126 4f5c1adee16e822d5e9dcfa7bfa63293 ""
   "figures/fig04_bertscore_distribution.png" 1779797659 129449 a4b328f72258f1185d6c070155307492 ""
-  "main.aux" 1779807006 6460 5950bd9500c7fbea69263a203a9171c4 "pdflatex"
-  "main.bbl" 1779804497 3662 7fbafe5b1fc23dec7ce24e6a43f8fa15 "bibtex main"
-  "main.out" 1779807006 3881 faddc16421cf2dce81f666b7985026b3 "pdflatex"
-  "main.tex" 1779807001 20247 d2b356ecf0f28e88468df60af9de0f78 ""
+  "main.aux" 1779871631 6516 2b4f62e998f6dc03f7c08c3daeb5e67a "pdflatex"
+  "main.bbl" 1779871625 3662 7fbafe5b1fc23dec7ce24e6a43f8fa15 "bibtex main"
+  "main.out" 1779871631 3881 faddc16421cf2dce81f666b7985026b3 "pdflatex"
+  "main.tex" 1779871613 21061 a0593fb09ee811dcc713f17f201f0172 ""
   (generated)
   "main.aux"
   "main.log"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.26)  26 MAY 2026 20:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.26)  27 MAY 2026 14:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -475,16 +475,16 @@ File: figures/fig02_hallucination_rate_by_category.png Graphic file (type png)
 Package pdftex.def Info: figures/fig02_hallucination_rate_by_category.png  used on input line 414.
 (pdftex.def)             Requested size: 252.0pt x 302.97939pt.
 [3 <./figures/fig03_metric_comparison.png> <./figures/fig04_bertscore_distribution.png> <./figures/fig02_hallucination_rate_by_category.png>]
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 504.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 520.
  (C:\Users\ironm\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 502--505
+Underfull \hbox (badness 10000) in paragraph at lines 518--521
 \OT1/ptm/m/n/10 dataset, and fig-ures as open-source con-tri-bu-tions at:
  []
 
 
-Overfull \hbox (42.0pt too wide) in paragraph at lines 502--505
+Overfull \hbox (42.0pt too wide) in paragraph at lines 518--521
 \OT1/pcr/m/n/10 https://github.com/monish1402/hallucination-guard 
  []
 
@@ -522,9 +522,9 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  75i,9n,79p,388b,446s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/ironm/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (4 pages, 852876 bytes).
+Output written on main.pdf (4 pages, 853569 bytes).
 PDF statistics:
- 245 PDF objects out of 1000 (max. 8388607)
+ 247 PDF objects out of 1000 (max. 8388607)
  49 named destinations out of 1000 (max. 500000)
  216 words of extra memory for PDF output out of 10000 (max. 10000000)
 
